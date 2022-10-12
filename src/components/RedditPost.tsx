@@ -1,4 +1,4 @@
-import { Post } from "../models/RedditPage";
+import Post from "../models/Post";
 import "./RedditPost.css";
 
 interface Props {
@@ -7,9 +7,9 @@ interface Props {
 const RedditPost = ({ post }: Props) => {
   return (
     <div className="RedditPost">
-      <h1>{post.data.title}</h1>
-      <p>By: {post.data.author} at</p>
-      <a href={post.data.url}>{post.data.url}</a>
+      <h1>{post.title}</h1>
+      <p>By: {post.thumbnail} at</p>
+      <a href={post.url}>{post.url}</a>
     </div>
   );
 };

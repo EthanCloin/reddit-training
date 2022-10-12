@@ -1,20 +1,23 @@
-interface Content {
+// my prev version and not used
+
+export interface Content {
   author: string;
   title: string;
   id: string;
   url: string;
 }
 
-interface Post {
+export interface Post {
   data: Content;
 }
 
-interface Page {
+export interface Page {
   after: string;
   children: Post[];
-  before: string | null;
+  //   before: string | null;
 }
 
 export default interface RedditPage {
   data: Page[];
+  nextPage: string;
 }

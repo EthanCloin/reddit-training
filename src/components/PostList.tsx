@@ -1,15 +1,15 @@
-import "./PostList.css";
-import { Post } from "../models/RedditPage";
+import Children from "../models/Children";
 import RedditPost from "./RedditPost";
+
 interface Props {
-  redditPosts: Post[];
+  redditPosts: Children[];
 }
 
 const PostList = ({ redditPosts }: Props) => {
   return (
     <li className="PostList">
       {redditPosts.map((post) => (
-        <RedditPost post={post} />
+        <RedditPost post={post.data} />
       ))}
     </li>
   );

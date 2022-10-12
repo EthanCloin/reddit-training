@@ -5,7 +5,7 @@ const RedditPage = () => {
   return (
     <div className="RedditPage">
       <h1>Here are some Reddit Posts!</h1>
-      <PostList />
+      {/* <PostList /> */}
     </div>
   );
 };
