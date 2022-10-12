@@ -8,7 +8,7 @@ const RedditPost = ({ post }: Props) => {
   return (
     <div className="RedditPost">
       <h1>{post.title}</h1>
-      <p>By: {post.thumbnail} at</p>
+      <img src={post.thumbnail} />
       <a href={post.url}>{post.url}</a>
     </div>
   );
